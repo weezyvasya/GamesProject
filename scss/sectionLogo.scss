@@ -14,18 +14,30 @@
 .main{
     flex-grow: 1;
     background-color: $colorText;
+    padding: 35px 0;
 }
 .footer{
-    height: 150px;
     border: 1px solid black;
     flex-shrink: 0;
     background-color: $colorBackgroundSecondary;
+
+}
+.footer-content{
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__title{
+        font-weight: 600;
+        font-size: 24px;
+    }
 }
 
 .header{
     width: 769px;
     min-height: 358px;
-    padding-top: 196px;
+    padding-top: 100px;
     padding-left: 120px;
     display: flex;
     flex-direction: column;

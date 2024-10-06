@@ -18,7 +18,17 @@
             <div class="header">
                 <h1 class="header-title">Добро пожаловать на мой сайт мини-игр</h1>
                 <p class="header-text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай «Поехали!» и приступай.</p>
-                <button class="header-btn">Поехали</button>
+                <button class="btnUI">Поехали</button>
+            </div>
+            <div class="animation-window">
+                <div class="animation-line">
+                    <p class="animation-line__text">Викторина</p> 
+                    <p class="animation-line__text">Угадай число</p>
+                    <p class="animation-line__text">Переверни текст</p>
+                    <p class="animation-line__text">Простая арифметика</p>
+                    <p class="animation-line__text">Камень, ножницы, бумага</p>
+                    <p class="animation-line__text">Генератор случайных цветов</p>
+                </div>
             </div>
         </section>
         <main class="main"> 
@@ -40,6 +50,7 @@
                                 <div class="card__bottom">
                                     <strong>Игра № 1</strong>
                                     <h2>Угадай число</h2>
+                                    <button class="btnUI btnUI_hidden">Играть</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -49,6 +60,7 @@
                                 <div class="card__bottom">
                                     <strong>Игра № 2</strong>
                                     <h2>Простая <br> арифметика</h2>
+                                    <button class="btnUI btnUI_hidden">Играть</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -58,6 +70,7 @@
                                 <div class="card__bottom">
                                     <strong>Игра № 3</strong>
                                     <h2>Переверни текс</h2>
+                                    <button class="btnUI btnUI_hidden">Играть</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -67,6 +80,7 @@
                                 <div class="card__bottom">
                                     <strong>Игра № 4</strong>
                                     <h2>Камень,<br>Ножницы,<br>бумага</h2>
+                                    <button class="btnUI btnUI_hidden">Играть</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -76,6 +90,7 @@
                                 <div class="card__bottom">
                                     <strong>Игра № 5</strong>
                                     <h2>Простая <br> викторина</h2>
+                                    <button class="btnUI btnUI_hidden">Играть</button>
                                 </div>
                             </div>
                             <div class="card">
@@ -85,16 +100,95 @@
                                 <div class="card__bottom">
                                     <strong>Игра № 6</strong>
                                     <h2>Генератор <br> случайных <br> цветов</h2>
+                                    <button class = "btnUI btnUI_hidden">Играть</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section></section>
+            <section class="section-games">
+                <div class="container">
+                    <div class="section-games-content">
+                        <div class="section-games-content-description">
+                            <h1>Мини Игры</h1>
+                        </div>
+                        <div class="section-games-content-cards">
+                            <div class="card card_vid">
+                                <div class="card__top card__top_vid card__top_order">
+                                    <img class="card-img" src="./img/guesthenumber.png" alt="card">
+                                </div>
+                                <div class="card__bottom card__bottom_vid">
+                                    <strong>Игра № 1</strong>
+                                    <h2>Угадай число</h2>
+                                    <button class="btnUI btnUI_active guesTheNum">Играть</button>
+                                </div>
+                            </div>
+                            <div class="card card_vid">
+                                <div class="card__top card__top_vid">
+                                    <img class="card-img" src="./img/easyMath.png" alt="card">
+                                </div>
+                                <div class="card__bottom card__bottom_vid">
+                                    <strong>Игра № 2</strong>
+                                    <h2>Простая <br> арифметика</h2>
+                                    <button class="btnUI btnUI_active easyMath ">Играть</button>
+                                </div>
+                            </div>
+                            <div class="card card_vid">
+                                <div class="card__top card__top_vid card__top_order">
+                                    <img class="card-img" src="./img/reverseText.png" alt="card">
+                                </div>
+                                <div class="card__bottom card__bottom_vid">
+                                    <strong>Игра № 3</strong>
+                                    <h2>Переверни текс</h2>
+                                    <button class="btnUI btnUI_active reverseText">Играть</button>
+                                </div>
+                            </div>
+                            <div class="card card_vid">
+                                <div class="card__top card__top_vid">
+                                    <img class="card-img" src="./img/rockSisorsPaper.png" alt="card">
+                                </div>
+                                <div class="card__bottom card__bottom_vid">
+                                    <strong>Игра № 4</strong>
+                                    <h2>Камень,<br>Ножницы,<br>бумага</h2>
+                                    <button class="btnUI btnUI_active rockPaperScisors">Играть</button>
+                                </div>
+                            </div>
+                            <div class="card card_vid">
+                                <div class="card__top card__top_vid card__top_order">
+                                    <img class="card-img" src="./img/easyQuest.png" alt="card">
+                                </div>
+                                <div class="card__bottom card__bottom_vid">
+                                    <strong>Игра № 5</strong>
+                                    <h2>Простая <br> викторина</h2>
+                                    <button class="btnUI btnUI_active quiz">Играть</button>
+                                </div>
+                            </div>
+                            <div class="card card_vid">
+                                <div class="card__top card__top_vid">
+                                    <img class="card-img" src="./img/randomColor.png" alt="card">
+                                </div>
+                                <div class="card__bottom card__bottom_vid">
+                                    <strong>Игра № 6</strong>
+                                    <h2>Генератор <br> случайных <br> цветов</h2>
+                                    <button class="btnUI btnUI_active">Играть</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-content__title">Все права защищены.</p>
+            </div>
+        </footer>
     </div>
-    <script src="index.js"></script>
+    <script src="guesTheNumber.js"></script>
+    <script src="easyMath.js"></script>
+    <script src="reverseText.js"></script>
+    <script src="rockPaperScisors.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>

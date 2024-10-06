@@ -1,0 +1,39 @@
+.animation-window{
+    background-color: $colorBackgroundSecondary;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+}
+.animation-line{
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 3220px;
+    animation: animLine 30s linear infinite;
+    &__text{
+        font-weight: 700;
+        font-size: 30px;
+        position: relative;
+        &::after{
+            content: '';
+            background-image: url(../img/Star.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 36px;
+            height: 36px;
+            position: absolute;
+            right: -115px;
+        }
+    }
+}
+
+@keyframes animLine{
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1800px);
+    }
+}

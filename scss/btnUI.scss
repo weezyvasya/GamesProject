@@ -1,0 +1,16 @@
+.btnUI{
+    width: 247px;
+    height: 66px;
+    background-color: $colorText;
+    border-radius: $borderRadius;
+    padding: 16px, 28px, 16px, 28px;
+    color: white;
+    font-weight: 600;
+    font-size: 24px;
+    &_hidden{
+        display: none;
+    }
+    &_active{
+        display: block;
+    }
+}
