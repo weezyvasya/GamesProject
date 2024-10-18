@@ -20,8 +20,8 @@ class RockPaperScisors {
         бумага: 2,
       },
     };
-    arr = ["камень", "ножницы", "бумага"];
-    randomIndex = Math.floor(Math.random() * this.arr.length);
+    arr = ["камень", "камень","камень","камень","ножницы","ножницы","ножницы","ножницы","бумага","бумага","бумага"];
+    randomIndex = Math.floor(0 + Math.random() * ((this.arr.length - 1) + 1 - 0));
     
   
     gameStart() {
